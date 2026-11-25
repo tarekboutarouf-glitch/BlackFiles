@@ -1,0 +1,26 @@
+PUBLICITÉS ET ACHAT « SUPPRIMER LES PUBS » — à faire avant la publication
+==========================================================================
+
+1) Identifiants AdMob
+   Fichier : app/src/main/res/values/ads.xml
+   Les valeurs actuelles sont les IDENTIFIANTS DE TEST de Google (les pubs affichées portent la mention « Test Ad »).
+   Remplacez-les par les vôtres (console AdMob) :
+     admob_app_id     -> ID de l'application  (ca-app-pub-XXXXXXXXXXXXXXXX~YYYYYYYYYY)
+     ad_rewarded      -> bloc « Avec récompense »
+     ad_interstitial  -> bloc « Interstitiel »
+     ad_banner        -> bloc « Bannière » (adaptative)
+   NE JAMAIS cliquer sur vos propres annonces réelles : utilisez des appareils de test.
+
+2) Produit intégré
+   Play Console > Monétiser avec Play > Produits > Produits intégrés > Créer
+   ID du produit : remove_ads   (exactement)
+   Prix conseillé : 1,99 à 2,99 USD. Activez-le.
+   (Le produit ne peut être créé qu'après avoir importé une version contenant la bibliothèque Billing.)
+
+3) Règles des publicités dans le jeu
+   - Vidéo récompensée : indices 2 et 3 de chaque affaire (si la vidéo ne charge pas, l'indice est offert).
+   - Interstitiel : après la résolution d'une affaire, 1 fois sur 3, jamais avant 5 affaires résolues.
+   - Bannière : uniquement sur le tableau d'enquête (carte des dossiers).
+   - Achat « remove_ads » : supprime interstitiels et bannière, indices sans vidéo. Restauré automatiquement.
+   - Formulaire de consentement (UE/Royaume-Uni) : affiché automatiquement au premier lancement si nécessaire
+     (à configurer dans AdMob > Confidentialité et messages > RGPD).
