@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ⚠ IDENTIFIANTS DE TEST GOOGLE. Remplacez-les par les vôtres (AdMob) avant la publication. -->
+<resources>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="ad_rewarded" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="ad_interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_banner" translatable="false">ca-app-pub-3940256099942544/9214589741</string>
+    <!-- identifiant du produit intégré à créer dans Play Console -->
+    <string name="iap_remove_ads" translatable="false">remove_ads</string>
+</resources>
